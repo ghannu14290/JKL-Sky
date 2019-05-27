@@ -502,9 +502,17 @@ class EditMyProfileScreen: UIViewController, UITextFieldDelegate,UIImagePickerCo
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
-        guard let text = mobileNumber.text else { return true }
-        let newLength = text.characters.count + string.characters.count - range.length
-        return newLength <= 10
+        
+        
+        if  textField  == mobileNumber {
+            let newLength = textField.text!.characters.count + string.characters.count - range.length
+            return newLength <= 10
+        }else
+        {
+            return true
+            
+        }
+       
     }
     
     //ACTION SHEET FOR PICK IMAGE.
