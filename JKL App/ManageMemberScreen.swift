@@ -66,8 +66,9 @@ class ManageMemberScreen: UIViewController, UISearchBarDelegate
     //FUNCTION FOR BACKBUTTON ACTION FROM NAVIGATION BAR
     @objc func back()
     {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.leftmenu()
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //appDelegate.leftmenu()
+        self.navigationController?.popViewController(animated: true)
     }
     
     

@@ -39,8 +39,10 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
         leftTableview.delegate      =   self
         leftTableview.dataSource    =   self
         leftTableview.register(UITableViewCell.self, forCellReuseIdentifier: "LeftMenuTableViewCell")
+        let viewBackground = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 50))
         
-        
+        view.backgroundColor = UIColor(red: 32/255, green: 95/255, blue: 166/255, alpha: 1)
+        self.view.addSubview(viewBackground)
         //CALL FUNCTION FOR DISPLAYING THE ARRAY.
         self.addObjectToArray()
 
@@ -124,7 +126,13 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
             
             let profileImageview = UIImageView()
             let imagestringApi = profileImage
+            
+            if !imagestringApi.isEmpty {
+            
             profileImageview.sd_setImage(with: URL(string: imagestringApi), placeholderImage: UIImage(named: "bg_profile_default"))
+            }else{
+                profileImageview.image = UIImage(named: "bg_profile_default")
+            }
             
             profileImageview.layer.borderColor = UIColor.clear.cgColor
             profileImageview.layer.borderWidth = 1.0;

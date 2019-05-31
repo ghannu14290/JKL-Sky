@@ -71,6 +71,7 @@ class HomeScreen: UIViewController
         
         
         //CALL THE HOME API FUNCTION
+         self.showProgress()
         self.homeAPI()
         
         //CALL THE PROFILE API.
@@ -750,7 +751,7 @@ class HomeScreen: UIViewController
         let newTodo: [String: Any] =  ["UserId": userID] as [String : Any]
         
         
-        self.showProgress()
+       
         
         Alamofire.request(postString, method: .post, parameters: newTodo,
                           
@@ -761,7 +762,7 @@ class HomeScreen: UIViewController
                 
                 if((response.result.value) != nil)
                 {
-                    self.hideProgress()
+                    
                     
                     let swiftyJsonVar = JSON(response.result.value!)
                     print(swiftyJsonVar)
@@ -813,7 +814,7 @@ class HomeScreen: UIViewController
                     if swiftyJsonVar["Home"]["Result"].stringValue == "Success"
                     {
                         print ("Success")
-                        self.hideProgress()
+                        //self.hideProgress()
                         
                         //DISPLAY MEMBER NAME
                         self.usernameLabel.text = self.memberName
@@ -837,8 +838,9 @@ class HomeScreen: UIViewController
                         self.profileImageview.clipsToBounds = true
                         self.profileImageview.isUserInteractionEnabled = true
                         self.profileImageview.contentMode = .scaleAspectFill
-                    }
-                    else
+                        self.hideProgress()
+                    }                    else
+                        
                     {
                         self.hideProgress()
                         //SHOW ALERT WHEN USERID IS WRONG
