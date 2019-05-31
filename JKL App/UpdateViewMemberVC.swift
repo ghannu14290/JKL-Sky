@@ -99,6 +99,7 @@ class UpdateViewMemberVC: UIViewController, UITextFieldDelegate, UIImagePickerCo
         backButn.setImage(UIImage(named: "ic_action_back (1)"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(back), for:.touchUpInside)
+        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setLeftBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         
@@ -869,7 +870,7 @@ class UpdateViewMemberVC: UIViewController, UITextFieldDelegate, UIImagePickerCo
         let imageString2 = imageData2?.base64EncodedString()
         print("image string \(String(describing: imageString2))")
        
-        let postString = "http://jklsky.com/api/Service.svc/UpdateRetailerProfile"
+        let postString = Common.BaseUrl + "UpdateRetailerProfile"
        
         let newTodo: [String: Any] =  ["UserId": userID,
                                        "FirmName":firmName.text!,
@@ -1001,7 +1002,7 @@ class UpdateViewMemberVC: UIViewController, UITextFieldDelegate, UIImagePickerCo
         let gender = genderButton.currentTitle
         let dob = DobBtn.currentTitle
 
-        let postString = "http://jklsky.com/api/Service.svc/UpdateInfluencerProfile"
+        let postString = Common.BaseUrl + "UpdateInfluencerProfile"
         
         let newTodo: [String: Any] =  ["UserId": userID,
                                        "FirstName":first_name.text!,

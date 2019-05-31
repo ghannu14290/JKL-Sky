@@ -287,7 +287,7 @@ class LoginScreen: UIViewController, UITextFieldDelegate, UIWebViewDelegate
             headers[authorizationHeader.key] = authorizationHeader.value
         }
 
-        let postString = "http://jklsky.com/api/Service.svc/Login"
+        let postString = Common.BaseUrl + "Login"
         
         let newTodo: [String: Any] =
             [
@@ -468,7 +468,7 @@ class LoginScreen: UIViewController, UITextFieldDelegate, UIWebViewDelegate
     func forgotPwdApi()
     {
         
-        let postString = "http://jklsky.com/api/Service.svc/ForgotPassword"
+        let postString = Common.BaseUrl + "ForgotPassword"
         
         let newTodo: [String: Any] =
                 ["UserId": userIDTextfield.text!] as [String : Any]
@@ -553,3 +553,10 @@ class LoginScreen: UIViewController, UITextFieldDelegate, UIWebViewDelegate
 
 
 
+
+
+class Common: NSObject {
+   static let BaseUrl = "http://jklakshmidemo.netcarrots.in/api/Service.svc/"
+   //static let BaseUrl // "http://jklsky.com/api/Service.svc/"
+    
+}

@@ -25,6 +25,7 @@ class RedemptionsScreen: UIViewController,UIWebViewDelegate
             NSAttributedStringKey.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = attributes
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 32/255, green: 95/255, blue: 166/255, alpha: 1)
+        
         self.navigationController?.navigationBar.isTranslucent = false
         
         
@@ -33,6 +34,7 @@ class RedemptionsScreen: UIViewController,UIWebViewDelegate
         backButn.setImage(UIImage(named: "ic_action_back (1)"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(back), for:.touchUpInside)
+        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setLeftBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         //CALL THE CREATE WEBVIEW FUNC TO DISPLAY THE WEBVIEW ON VIEW.

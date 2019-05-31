@@ -42,6 +42,7 @@ class NotificationScreen: UIViewController, UITableViewDelegate, UITableViewData
         backButn.setImage(UIImage(named: "ic_action_back (1)"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(back), for:.touchUpInside)
+        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setLeftBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         
@@ -169,7 +170,7 @@ class NotificationScreen: UIViewController, UITableViewDelegate, UITableViewData
         let mobileNumber = UserDefaults.standard.object(forKey:"mobileNum") as! String
         print(mobileNumber)
         
-        let postString = "http://jklsky.com/api/Service.svc/GetNotification"
+        let postString = Common.BaseUrl + "GetNotification"
         
         let newTodo: [String: Any] =  ["MobileNo": mobileNumber] as [String : Any]
         

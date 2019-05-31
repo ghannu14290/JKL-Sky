@@ -132,7 +132,7 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
             profileImageview.clipsToBounds = true
             profileImageview.isUserInteractionEnabled = true
             profileImageview.contentMode = .scaleAspectFill
-            profileImageview.frame = CGRect(x: 20, y: 70, width: 60, height: 60)
+            profileImageview.frame = CGRect(x: 20, y: 30, width: 60, height: 60)
             cell.contentView.addSubview(profileImageview)
             
 
@@ -140,7 +140,7 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
             let username = UserDefaults.standard.object(forKey:"MemberName") as! String
             print(username)
             
-            let name = UILabel(frame: CGRect(x: 22, y: 125, width: 200, height: 60))
+            let name = UILabel(frame: CGRect(x: 22, y: 90 , width: self.view.frame.size.width - 44 , height: 30))
             name.textAlignment = .left
             name.text = username
             name.textColor=UIColor.white
@@ -152,7 +152,7 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
             let mobileNumber = UserDefaults.standard.object(forKey:"mobileNumber") as! String
             print(mobileNumber)
             
-            let number = UILabel(frame: CGRect(x: 22, y: 162, width: 250, height: 30))
+            let number = UILabel(frame: CGRect(x: 22, y: 110, width: 250, height: 30))
             number.textAlignment = .left
             number.text = mobileNumber
             number.textColor=UIColor.white
@@ -212,7 +212,7 @@ class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         if indexPath.row == 0
         {
-            r = 200
+            r = 150
             
         }
         else

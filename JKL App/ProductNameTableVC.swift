@@ -56,6 +56,7 @@ class ProductNameTableVC: UIViewController, UITableViewDelegate,UITableViewDataS
         backButn.setImage(UIImage(named: "ic_action_back (1)"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(back), for:.touchUpInside)
+        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setLeftBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         
@@ -149,7 +150,7 @@ class ProductNameTableVC: UIViewController, UITableViewDelegate,UITableViewDataS
             headers[authorizationHeader.key] = authorizationHeader.value
         }
 
-        let postString = "http://jklsky.com/api/Service.svc/GetProductMaster"
+        let postString = Common.BaseUrl + "GetProductMaster"
         
         
         
