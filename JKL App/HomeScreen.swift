@@ -74,19 +74,7 @@ class HomeScreen: UIViewController
          self.showProgress()
         self.homeAPI()
         
-        //CALL THE PROFILE API.
-        let membertype = UserDefaults.standard.object(forKey:"memberType") as! String
-        print(membertype)
         
-        if membertype == "D"
-        {
-            self.profileApi()
-            
-        }
-        else if membertype == "R"
-        {
-            self.retailerProfile()
-        }
         
         
         
@@ -105,6 +93,7 @@ class HomeScreen: UIViewController
         backButn.setImage(UIImage(named: "ic_action_bell"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(notificationScreen), for:.touchUpInside)
+        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setRightBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         
@@ -443,7 +432,7 @@ class HomeScreen: UIViewController
         }
 
         
-        let postString = "http://jklsky.com/api/Service.svc/ViewDealerProfile"
+        let postString = Common.BaseUrl + "ViewDealerProfile"
         
         let newTodo: [String: Any] =  ["UserId": userID] as [String : Any]
         
@@ -598,7 +587,7 @@ class HomeScreen: UIViewController
         print(userID)
         
         
-        let postString = "http://jklsky.com/api/Service.svc/ViewRetailerProfile"
+        let postString = Common.BaseUrl + "ViewRetailerProfile"
         
         let newTodo: [String: Any] =  ["UserId": userID] as [String : Any]
         
@@ -746,7 +735,7 @@ class HomeScreen: UIViewController
         }
 
         
-        let postString = "http://jklsky.com/api/Service.svc/Home"
+        let postString = Common.BaseUrl + "Home"
         
         let newTodo: [String: Any] =  ["UserId": userID] as [String : Any]
         
@@ -848,6 +837,22 @@ class HomeScreen: UIViewController
                         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
+                    
+                    
+                    //CALL THE PROFILE API.
+                    let membertype = UserDefaults.standard.object(forKey:"memberType") as! String
+                    print(membertype)
+                    
+                    if membertype == "D"
+                    {
+                        self.profileApi()
+                        
+                    }
+                    else if membertype == "R"
+                    {
+                        self.retailerProfile()
+                    }
+                    
                 }
         }
 }
