@@ -93,7 +93,7 @@ class HomeScreen: UIViewController
         backButn.setImage(UIImage(named: "ic_action_bell"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(notificationScreen), for:.touchUpInside)
-        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
+       // backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setRightBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         

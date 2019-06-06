@@ -99,6 +99,7 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
         //CALL DELEGATE AND DATASOURCE METHODS.
         tableview.delegate = self
         tableview.dataSource = self
+    
         
     }
     
@@ -147,6 +148,7 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "commentViewcell")
+        cell.selectionStyle = .none
         
         
         cell.backgroundView = UIImageView(image: UIImage(named: "ios_block_new"))
@@ -218,7 +220,7 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell;
         
     }
-    
+    /*
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
@@ -330,120 +332,120 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         self.showpopActionSheet()
     }
-    
+    */
     
     //THREEDOTS BUTTON ACTION.
     
     @objc func popUpView(sender: UIButton!)
      {
-//        
-//        //USERID
-//        let userid = self.userId[sender.tag]
-//        self.memberUserId = userid
-//        print(memberUserId)
-//        
-//        //MOBILE NUMBER
-//        let number = self.mobileNumber[sender.tag]
-//        self.membermobileNumber = number
-//        print(membermobileNumber)
-//        
-//
-//        //NAME
-//        let fisrtString = firstName[sender.tag]
-//        let secondString = lastName[sender.tag]
-//        let nameString = "\(fisrtString) \(secondString)"
-//        self.memberName = nameString
-//        print(memberName)
-//        
-//        
-//        //TYPE
-//        let type = self.memberType[sender.tag]
-//        self.membertype = type
-//        print(memberType)
-//        
-//        //BALANCE
-//        let blnc = self.currentBalnc[sender.tag]
-//        self.balance = blnc
-//        print(balance)
-//        
-//        
-//        //FIRMNAME
-//        let cmpny = self.firmName[sender.tag]
-//        self.membercomapnyName = cmpny
-//        print(cmpny)
-//        
-//        
-//        //FIRSTNAME
-//        let firstname = self.firstName[sender.tag]
-//        self.memberfirstName = firstname
-//        print(firstname)
-//        
-//        
-//        //LASTNAME
-//        let lastname = self.lastName[sender.tag]
-//        self.memberLastname = lastname
-//        print(lastname)
-//        
-//        //LASTNAME
-//        let emailID = self.emailId[sender.tag]
-//        self.memberEmailId = emailID
-//        print(lastname)
-//        
-//        
-//        //GENDER
-//        let Gender = self.gender[sender.tag]
-//        self.membergender = Gender
-//        print(Gender)
-//        
-//        //DOB
-//        let dateOfB = self.dob[sender.tag]
-//        self.memberdob = dateOfB
-//        print(dateOfB)
-//        
-//        //STATE
-//        let mState = self.state[sender.tag]
-//        self.memberState = mState
-//        print(mState)
-//        
-//        //DISTRICT
-//        let mdistrict = self.district[sender.tag]
-//        self.memberDistrict = mdistrict
-//        print(mdistrict)
-//        
-//        //PROFILEIMAGE
-//        let proImage = self.profileImage[sender.tag]
-//        self.memberprofileImage = proImage
-//        print(proImage)
-//        
-//        //IDPROOFIMAGE
-//        let IDproofImage = self.idProofImage[sender.tag]
-//        self.memberidProofImage = IDproofImage
-//        print(IDproofImage)
-//        
-//        
-//        //ADDRESS
-//        let addr = self.address1[sender.tag]
-//        self.memberaddress = addr
-//        print(addr)
-//        
-//        
-//        //GUID
-//        let GUID = self.guid[sender.tag]
-//        self.memberguid = GUID
-//        print(GUID)
-//        
-//        
-//        //STATE ID
-//        let stateId = self.stateId[sender.tag]
-//        self.memberstateId = stateId
-//        
-//        
-//        //DISTRICT ID
-//        let disctId = self.districtId[sender.tag]
-//        self.memberDistrictId = disctId
-//        
-//
-//        self.showpopActionSheet()
+        
+        //USERID
+        let userid = self.userId[sender.tag]
+        self.memberUserId = userid
+        print(memberUserId)
+        
+        //MOBILE NUMBER
+        let number = self.mobileNumber[sender.tag]
+        self.membermobileNumber = number
+        print(membermobileNumber)
+        
+
+        //NAME
+        let fisrtString = firstName[sender.tag]
+        let secondString = lastName[sender.tag]
+        let nameString = "\(fisrtString) \(secondString)"
+        self.memberName = nameString
+        print(memberName)
+        
+        
+        //TYPE
+        let type = self.memberType[sender.tag]
+        self.membertype = type
+        print(memberType)
+        
+        //BALANCE
+        let blnc = self.currentBalnc[sender.tag]
+        self.balance = blnc
+        print(balance)
+        
+        
+        //FIRMNAME
+        let cmpny = self.firmName[sender.tag]
+        self.membercomapnyName = cmpny
+        print(cmpny)
+        
+        
+        //FIRSTNAME
+        let firstname = self.firstName[sender.tag]
+        self.memberfirstName = firstname
+        print(firstname)
+        
+        
+        //LASTNAME
+        let lastname = self.lastName[sender.tag]
+        self.memberLastname = lastname
+        print(lastname)
+        
+        //LASTNAME
+        let emailID = self.emailId[sender.tag]
+        self.memberEmailId = emailID
+        print(lastname)
+        
+        
+        //GENDER
+        let Gender = self.gender[sender.tag]
+        self.membergender = Gender
+        print(Gender)
+        
+        //DOB
+        let dateOfB = self.dob[sender.tag]
+        self.memberdob = dateOfB
+        print(dateOfB)
+        
+        //STATE
+        let mState = self.state[sender.tag]
+        self.memberState = mState
+        print(mState)
+        
+        //DISTRICT
+        let mdistrict = self.district[sender.tag]
+        self.memberDistrict = mdistrict
+        print(mdistrict)
+        
+        //PROFILEIMAGE
+        let proImage = self.profileImage[sender.tag]
+        self.memberprofileImage = proImage
+        print(proImage)
+        
+        //IDPROOFIMAGE
+        let IDproofImage = self.idProofImage[sender.tag]
+        self.memberidProofImage = IDproofImage
+        print(IDproofImage)
+        
+        
+        //ADDRESS
+        let addr = self.address1[sender.tag]
+        self.memberaddress = addr
+        print(addr)
+        
+        
+        //GUID
+        let GUID = self.guid[sender.tag]
+        self.memberguid = GUID
+        print(GUID)
+        
+        
+        //STATE ID
+        let stateId = self.stateId[sender.tag]
+        self.memberstateId = stateId
+        
+        
+        //DISTRICT ID
+        let disctId = self.districtId[sender.tag]
+        self.memberDistrictId = disctId
+        
+
+        self.showpopActionSheet()
      }
     
     func showpopActionSheet()
