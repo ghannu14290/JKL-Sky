@@ -71,6 +71,7 @@ class HomeScreen: UIViewController
         
         
         //CALL THE HOME API FUNCTION
+         self.showProgress()
         self.homeAPI()
         
         
@@ -92,7 +93,7 @@ class HomeScreen: UIViewController
         backButn.setImage(UIImage(named: "ic_action_bell"), for: .normal)
         backButn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
         backButn.addTarget(self, action: #selector(notificationScreen), for:.touchUpInside)
-        backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
+       // backButn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20.0, bottom: 0, right: 13.0)
         self.navigationItem.setRightBarButton(UIBarButtonItem(customView: backButn), animated: true)
         
         
@@ -739,7 +740,7 @@ class HomeScreen: UIViewController
         let newTodo: [String: Any] =  ["UserId": userID] as [String : Any]
         
         
-        self.showProgress()
+       
         
         Alamofire.request(postString, method: .post, parameters: newTodo,
                           
@@ -750,7 +751,7 @@ class HomeScreen: UIViewController
                 
                 if((response.result.value) != nil)
                 {
-                    self.hideProgress()
+                    
                     
                     let swiftyJsonVar = JSON(response.result.value!)
                     print(swiftyJsonVar)
@@ -802,7 +803,7 @@ class HomeScreen: UIViewController
                     if swiftyJsonVar["Home"]["Result"].stringValue == "Success"
                     {
                         print ("Success")
-                        self.hideProgress()
+                        //self.hideProgress()
                         
                         //DISPLAY MEMBER NAME
                         self.usernameLabel.text = self.memberName
@@ -826,8 +827,9 @@ class HomeScreen: UIViewController
                         self.profileImageview.clipsToBounds = true
                         self.profileImageview.isUserInteractionEnabled = true
                         self.profileImageview.contentMode = .scaleAspectFill
-                    }
-                    else
+                        self.hideProgress()
+                    }                    else
+                        
                     {
                         self.hideProgress()
                         //SHOW ALERT WHEN USERID IS WRONG

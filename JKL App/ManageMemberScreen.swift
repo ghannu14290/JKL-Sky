@@ -69,6 +69,7 @@ class ManageMemberScreen: UIViewController, UISearchBarDelegate
     {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.leftmenu()
+        //self.navigationController?.popViewController(animated: true)
     }
     
     

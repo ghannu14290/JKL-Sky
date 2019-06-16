@@ -73,8 +73,18 @@ class OTPScreen: UIViewController, UITextFieldDelegate
         //DETAILS
         self.details()
         
+        
+        // Tap gesture
+        let tapOnView = UITapGestureRecognizer(target: self, action: #selector(disappearKeyBoard))
+        tapOnView.numberOfTapsRequired = 1
+        tapOnView.numberOfTouchesRequired = 1
+        self.view.addGestureRecognizer(tapOnView)
+        
     }
     
+    @objc private func disappearKeyBoard(){
+        self.view.endEditing(true)
+    }
     
     //FUNCTION FOR BACKBUTTON ACTION FROM NAVIGATION BAR
     @objc func back()
