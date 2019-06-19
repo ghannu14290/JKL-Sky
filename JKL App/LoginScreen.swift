@@ -559,4 +559,6 @@ class Common: NSObject {
    static let BaseUrl = "http://jklakshmidemo.netcarrots.in/api/Service.svc/"
    //static let BaseUrl // "http://jklsky.com/api/Service.svc/"
     
+    
+    
 }
