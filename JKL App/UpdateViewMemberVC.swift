@@ -35,7 +35,7 @@ class UpdateViewMemberVC: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet var gnderplchldrlabel: UILabel!
     @IBOutlet var dobplchldrlabel: UILabel!
     //TEXTFIELDS.
-    @IBOutlet var company_name: UITextField!
+    //@IBOutlet var company_name: UITextField!
     @IBOutlet var first_name: UITextField!
     @IBOutlet var last_name: UITextField!
     @IBOutlet var mobileNumber: UITextField!
@@ -308,7 +308,7 @@ class UpdateViewMemberVC: UIViewController, UITextFieldDelegate, UIImagePickerCo
         secondViewController.id = stateValue
         self.navigationController?.pushViewController(secondViewController, animated: true)
         
-        company_name.resignFirstResponder()
+      //  company_name.resignFirstResponder()
         first_name.resignFirstResponder()
         last_name.resignFirstResponder()
         mobileNumber.resignFirstResponder()
