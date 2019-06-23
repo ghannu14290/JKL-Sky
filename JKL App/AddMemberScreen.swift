@@ -14,6 +14,7 @@ import Alamofire
 import SwiftyJSON
 
 
+@available(iOS 10.0, *)
 class AddMemberScreen: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate,StateProtocol, DistrictProtocol,StateIDProtocol, DistrictIDProtocol, UIScrollViewDelegate
 {
     //OUTLETS.

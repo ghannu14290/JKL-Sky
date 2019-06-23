@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 
+@available(iOS 10.0, *)
 class RedeemPointsMemberVC: UIViewController, UIWebViewDelegate{
 
     var membermobileNumber = String()

@@ -10,6 +10,7 @@ import UIKit
 import DatePickerDialog
 
 
+@available(iOS 10.0, *)
 class AccountStatementScreen: UIViewController, valueProtocol
 {
     

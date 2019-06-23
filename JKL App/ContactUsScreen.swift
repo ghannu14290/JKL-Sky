@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 
+@available(iOS 10.0, *)
 class ContactUsScreen: UIViewController,UIWebViewDelegate
 {
     

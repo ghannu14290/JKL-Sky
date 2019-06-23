@@ -20,6 +20,7 @@ protocol SiteTypeProtocolo
     
 }
 
+@available(iOS 10.0, *)
 class SiteTypeVC: UIViewController, UITableViewDelegate,UITableViewDataSource
 {
     //OUTLETS

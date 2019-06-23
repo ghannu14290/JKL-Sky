@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 import MBProgressHUD
 
+@available(iOS 10.0, *)
 class AllocationHistoryVC: UIViewController ,UITableViewDelegate, UITableViewDataSource{
 
     var error_code : Int = 0

@@ -16,6 +16,9 @@ import DatePickerDialog
 
 
 
+@available(iOS 10.0, *)
+@available(iOS 10.0, *)
+@available(iOS 10.0, *)
 class RetaileEditProfileScene: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate, StateProtocol, DistrictProtocol, StateIDProtocol, DistrictIDProtocol
 {
     //OUTLETS.

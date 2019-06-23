@@ -14,6 +14,7 @@ import Alamofire
 import MBProgressHUD
 
 
+@available(iOS 10.0, *)
 class HomeScreen: UIViewController
 {
     //OUTLETS.

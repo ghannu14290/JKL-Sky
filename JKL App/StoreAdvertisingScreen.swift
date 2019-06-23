@@ -14,6 +14,7 @@ import SwiftyJSON
 
 
 
+@available(iOS 10.0, *)
 class StoreAdvertisingScreen: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, MyCampaignProtocol, campNameProtocol
 {
     

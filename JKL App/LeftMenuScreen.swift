@@ -18,6 +18,7 @@ protocol valueProtocol
 }
 
 
+@available(iOS 10.0, *)
 class LeftMenuScreen: UIViewController,UITableViewDelegate, UITableViewDataSource
 {
     //OUTLETS.

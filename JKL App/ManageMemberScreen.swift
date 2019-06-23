@@ -9,6 +9,7 @@
 import UIKit
 
 
+@available(iOS 10.0, *)
 class ManageMemberScreen: UIViewController, UISearchBarDelegate
 {
  

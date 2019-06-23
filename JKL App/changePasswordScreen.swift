@@ -13,6 +13,7 @@ import MBProgressHUD
 
 
 
+@available(iOS 10.0, *)
 class changePasswordScreen: UIViewController,UITextFieldDelegate
 {
     //OULETS.

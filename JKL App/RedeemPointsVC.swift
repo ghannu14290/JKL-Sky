@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 
+@available(iOS 10.0, *)
 class RedeemPointsVC: UIViewController, UIWebViewDelegate
 {
     //VALUES FROM THE PREVIOUS SCREEN

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 class SplashScreen: UIViewController {
 
     override func viewDidLoad() {

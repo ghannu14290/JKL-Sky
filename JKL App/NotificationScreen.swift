@@ -13,6 +13,7 @@ import MBProgressHUD
 
 
 
+@available(iOS 10.0, *)
 class NotificationScreen: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     //OUTLETS.

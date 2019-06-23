@@ -14,6 +14,7 @@ import MBProgressHUD
 
 
 
+@available(iOS 10.0, *)
 class AllowedBagsScreen: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     //OUTLETS.

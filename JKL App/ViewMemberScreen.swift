@@ -12,6 +12,7 @@ import SwiftyJSON
 import MBProgressHUD
 
 
+@available(iOS 10.0, *)
 class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
   

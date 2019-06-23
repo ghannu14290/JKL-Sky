@@ -14,6 +14,8 @@ import MBProgressHUD
 import DatePickerDialog
 
 
+@available(iOS 10.0, *)
+@available(iOS 10.0, *)
 class AddTransactionScreen: UIViewController, UITextFieldDelegate, productProtocolo, SiteTypeProtocolo
 {
     

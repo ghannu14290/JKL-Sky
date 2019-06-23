@@ -12,6 +12,7 @@ import SwiftyJSON
 import MBProgressHUD
 
 
+@available(iOS 10.0, *)
 class LoginScreen: UIViewController, UITextFieldDelegate, UIWebViewDelegate
 {
     //LOGIN OUTLETS..

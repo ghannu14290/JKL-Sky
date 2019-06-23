@@ -14,6 +14,7 @@ import MBProgressHUD
 
 
 
+@available(iOS 10.0, *)
 class EditMyProfileScreen: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate, StateProtocol, DistrictProtocol, StateIDProtocol, DistrictIDProtocol
 {
     

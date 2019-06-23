@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import MBProgressHUD
+@available(iOS 10.0, *)
 class AppUpdateHandler: NSObject {
     static let shared = AppUpdateHandler()
     
@@ -94,7 +95,7 @@ class AppUpdateHandler: NSObject {
     
     private func getCurrentAppVersion() -> String{
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-        return appVersion ?? "0.0"
+        return appVersion ?? "1.0"
         
     }
     

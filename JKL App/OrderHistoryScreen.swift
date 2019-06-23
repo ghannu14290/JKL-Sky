@@ -9,6 +9,7 @@
 import UIKit
 import DatePickerDialog
 
+@available(iOS 10.0, *)
 class OrderHistoryScreen: UIViewController
 {
     

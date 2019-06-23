@@ -18,6 +18,7 @@ protocol MyProtocol
 }
 
 
+@available(iOS 10.0, *)
 class StateTableView: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     //OUTLETS

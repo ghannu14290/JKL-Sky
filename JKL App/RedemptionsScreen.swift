@@ -10,6 +10,7 @@ import UIKit
 import MBProgressHUD
 
 
+@available(iOS 10.0, *)
 class RedemptionsScreen: UIViewController,UIWebViewDelegate
 {
     //WEBVIEW.
