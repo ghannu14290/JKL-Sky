@@ -53,10 +53,13 @@ class AppUpdateHandler: NSObject {
                     let error_code = swiftyJsonVar["GetVersionApi"]["ErrorCode"].intValue
                     print(error_code)
                     
-                    let currentiOSVersion = String(swiftyJsonVar["GetVersionApi"]["AppVersionIOS"].string ?? "")
+                    var currentiOSVersion = String(swiftyJsonVar["GetVersionApi"]["AppVersionIOS"].string ?? "")
                     
                     
                    // print(currentiOSVersion as Any)
+                    if currentiOSVersion.isEmpty{
+                        currentiOSVersion = "1.0"
+                    }
                     
                     let getAppVersion = self.getCurrentAppVersion()
                     
@@ -73,7 +76,7 @@ class AppUpdateHandler: NSObject {
 
                             print("Update Available")
                         
-                        let alert = UIAlertController(title: "Sankalp - Needs to Be Updated", message: "This app will not work with the future version of iOS. The developer of this app needs to update it to improve it compatibility.", preferredStyle: UIAlertControllerStyle.alert)
+                        let alert = UIAlertController(title: "Sky App - Needs to Be Updated", message: "This app will not work with the future version of iOS. The developer of this app needs to update it to improve it compatibility.", preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (result) in
                             self.redirectAppToAppStore()
                         }))
