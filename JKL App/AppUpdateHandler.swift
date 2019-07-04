@@ -30,7 +30,7 @@ class AppUpdateHandler: NSObject {
         }
         
         
-        let postString = "http://ucwldemo.netcarrots.in/API/Service.svc/GetVersionApi"
+        let postString = Common.BaseUrl + "GetVersionApi"
         
         let newTodo: [String: Any] =  ["ProgramType": "Sky"] as [String : Any]
         
