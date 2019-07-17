@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JKL App/HomeScreen.swift"
-            timestampString = "582948361.597032"
+            timestampString = "585075786.70706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "523"
+            endingLineNumber = "523"
+            landmarkName = "profileApi()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JKL App/AppUpdateHandler.swift"
-            timestampString = "583152617.694291"
+            filePath = "JKL App/HomeScreen.swift"
+            timestampString = "585075786.70713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "checkAppUpdate()"
+            startingLineNumber = "770"
+            endingLineNumber = "770"
+            landmarkName = "homeAPI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

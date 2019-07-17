@@ -105,7 +105,7 @@ class AppUpdateHandler: NSObject {
     
     private func redirectAppToAppStore(){
         
-        UIApplication.shared.open((NSURL(string: "https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1316366680")! as URL), options: ["":""], completionHandler: nil)
+        UIApplication.shared.open((NSURL(string: "itms-apps://itunes.apple.com/us/app/magento2-mobikul-mobile-app/id1316366680")! as URL), options: ["":""], completionHandler: nil)
     }
     
 }

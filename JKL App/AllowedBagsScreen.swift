@@ -36,7 +36,7 @@ class AllowedBagsScreen: UIViewController, UITableViewDelegate, UITableViewDataS
 
         
         //NAVIGATION BAR
-        self.navigationItem.title = "Allowed Bags for Allocation"
+        self.navigationItem.title = "Allowed Product for Allocation"
         let attributes = [
             NSAttributedStringKey.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = attributes

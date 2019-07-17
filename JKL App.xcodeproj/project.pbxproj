@@ -600,7 +600,7 @@
 				TargetAttributes = {
 					4363B0741F4560EC00BF7DD0 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DGWL98AJQ9;
+						DevelopmentTeam = UCMWLC8J8P;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
@@ -845,12 +845,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jain (M82K2UVKPT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Amit Jain (M82K2UVKPT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DGWL98AJQ9;
+				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -870,6 +870,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -899,12 +900,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jain (M82K2UVKPT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Amit Jain (M82K2UVKPT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DGWL98AJQ9;
+				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -917,6 +918,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -931,10 +933,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jain (M82K2UVKPT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Amit Jain (M82K2UVKPT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DGWL98AJQ9;
+				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/SDWebImage",
@@ -942,10 +944,10 @@
 				INFOPLIST_FILE = "JKL App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSkyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = SKY_Demo;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "JKL App/JKL App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -960,10 +962,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jain (M82K2UVKPT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Amit Jain (M82K2UVKPT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DGWL98AJQ9;
+				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/SDWebImage",
@@ -971,10 +973,10 @@
 				INFOPLIST_FILE = "JKL App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSkyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = SKY_Demo;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "JKL App/JKL App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
