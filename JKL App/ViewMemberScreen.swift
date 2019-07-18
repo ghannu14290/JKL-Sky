@@ -190,7 +190,7 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
       
         
         //STATE
-        let state = UILabel(frame: CGRect(x: 16, y:87, width: 150, height: 20))
+        let state = UILabel(frame: CGRect(x: 16, y:87, width: 210, height: 20))
         state.textAlignment = .left
         state.text = "State : \(self.state[indexPath.row])"
         state.textColor=UIColor.darkGray
@@ -199,7 +199,7 @@ class ViewMemberScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         //DISTRICT
-        let district = UILabel(frame: CGRect(x: 150, y:87, width: 200, height: 20))
+        let district = UILabel(frame: CGRect(x: 16, y:110 , width: 200, height: 20))
         district.textAlignment = .left
         district.text = "District : \(self.district[indexPath.row])"
         district.textColor=UIColor.darkGray

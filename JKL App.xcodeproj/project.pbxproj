@@ -66,6 +66,9 @@
 		43E434BB1F57DC0A00171BE6 /* OrderHistoryTableviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E434BA1F57DC0A00171BE6 /* OrderHistoryTableviewVC.swift */; };
 		43E434BD1F57DC1D00171BE6 /* OrdrHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E434BC1F57DC1D00171BE6 /* OrdrHistoryTableViewCell.swift */; };
 		A50B629C22B601A90048F9A9 /* AppUpdateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B629B22B601A90048F9A9 /* AppUpdateHandler.swift */; };
+		A5E9903C22E0DF19001E0DE7 /* Certificates_Distribution.p12 in Resources */ = {isa = PBXBuildFile; fileRef = A5E9903922E0DF19001E0DE7 /* Certificates_Distribution.p12 */; };
+		A5E9903D22E0DF19001E0DE7 /* Certificates_JKL.p12 in Resources */ = {isa = PBXBuildFile; fileRef = A5E9903A22E0DF19001E0DE7 /* Certificates_JKL.p12 */; };
+		A5E9903E22E0DF19001E0DE7 /* Certificates_developer.p12 in Resources */ = {isa = PBXBuildFile; fileRef = A5E9903B22E0DF19001E0DE7 /* Certificates_developer.p12 */; };
 		B251E0E320087D5E00C5EC78 /* AllocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251E0E220087D5E00C5EC78 /* AllocationHistoryVC.swift */; };
 		B2D7DED71F7E5FDE00D3FB31 /* RedeemPointsMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7DED61F7E5FDE00D3FB31 /* RedeemPointsMemberVC.swift */; };
 /* End PBXBuildFile section */
@@ -159,6 +162,9 @@
 		94226E8DCA740205738E8BF0 /* Pods_JKL_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKL_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50B629B22B601A90048F9A9 /* AppUpdateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateHandler.swift; sourceTree = "<group>"; };
 		A5BF0D5DBD9335EB2E0A2C6D /* Pods-JKL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKL App.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKL App/Pods-JKL App.release.xcconfig"; sourceTree = "<group>"; };
+		A5E9903922E0DF19001E0DE7 /* Certificates_Distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates_Distribution.p12; sourceTree = "<group>"; };
+		A5E9903A22E0DF19001E0DE7 /* Certificates_JKL.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates_JKL.p12; sourceTree = "<group>"; };
+		A5E9903B22E0DF19001E0DE7 /* Certificates_developer.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates_developer.p12; sourceTree = "<group>"; };
 		B251E0E220087D5E00C5EC78 /* AllocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocationHistoryVC.swift; sourceTree = "<group>"; };
 		B2D7DED61F7E5FDE00D3FB31 /* RedeemPointsMemberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemPointsMemberVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,6 +327,7 @@
 		4363B0771F4560EC00BF7DD0 /* JKL App */ = {
 			isa = PBXGroup;
 			children = (
+				A5E9903822E0DE63001E0DE7 /* Certificates */,
 				A50B629A22B601690048F9A9 /* AppUpdateHandler */,
 				4363B0781F4560EC00BF7DD0 /* AppDelegate.swift */,
 				4363B0AB1F45632800BF7DD0 /* SplashScreen.swift */,
@@ -514,6 +521,16 @@
 			name = AppUpdateHandler;
 			sourceTree = "<group>";
 		};
+		A5E9903822E0DE63001E0DE7 /* Certificates */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9903B22E0DF19001E0DE7 /* Certificates_developer.p12 */,
+				A5E9903922E0DF19001E0DE7 /* Certificates_Distribution.p12 */,
+				A5E9903A22E0DF19001E0DE7 /* Certificates_JKL.p12 */,
+			);
+			name = Certificates;
+			sourceTree = "<group>";
+		};
 		E0D5728332BCB1200C8C2EF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,9 +661,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E9903E22E0DF19001E0DE7 /* Certificates_developer.p12 in Resources */,
+				A5E9903D22E0DF19001E0DE7 /* Certificates_JKL.p12 in Resources */,
 				4363B0831F4560EC00BF7DD0 /* LaunchScreen.storyboard in Resources */,
 				4363B0801F4560EC00BF7DD0 /* Assets.xcassets in Resources */,
 				4363B07E1F4560EC00BF7DD0 /* Main.storyboard in Resources */,
+				A5E9903C22E0DF19001E0DE7 /* Certificates_Distribution.p12 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,8 +865,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -870,7 +890,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_Dist;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -900,8 +920,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -918,7 +938,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_Dist;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -933,8 +953,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -947,7 +967,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_Dist;
 				SWIFT_OBJC_BRIDGING_HEADER = "JKL App/JKL App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -962,8 +982,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: J K lakshmi cement (5328TVFXQ9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: J K lakshmi cement (UCMWLC8J8P)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UCMWLC8J8P;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -976,7 +996,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JKL.JKLSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = Sky_dev;
+				PROVISIONING_PROFILE_SPECIFIER = Sky_Dist;
 				SWIFT_OBJC_BRIDGING_HEADER = "JKL App/JKL App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
