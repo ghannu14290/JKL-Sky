@@ -557,7 +557,7 @@ class LoginScreen: UIViewController, UITextFieldDelegate, UIWebViewDelegate
 
 
 class Common: NSObject {
-   static let BaseUrl = "http://jklakshmidemo.netcarrots.in/api/Service.svc/"
-   //static let BaseUrl // "http://jklsky.com/api/Service.svc/"
+   //static let BaseUrl = "http://jklakshmidemo.netcarrots.in/api/Service.svc/"
+   static let BaseUrl = "http://jklsky.com/api/Service.svc/"
 
 }

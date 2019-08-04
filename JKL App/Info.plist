@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.4</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -28,11 +28,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Set the image</string>
+	<string>Application will use the camera functinality for set/change the user profile photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Advertisement would like to store a photo.</string>
+	<string>Application will use the gallery functinality for set/change the user profile photo.</string>
 	<key>NSPhotoLibraryUsageDescription - 2</key>
-	<string>Advertisement would like to store a photo.</string>
+	<string>Application will use the camera roll functinality for set/change the user profile photo.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
